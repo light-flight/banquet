@@ -1,1 +1,10 @@
 @import "base/typography";
+@import "base/variables";
+
+@import "../../node_modules/mdbootstrap/css/bootstrap.min";
+@import "../../node_modules/mdbootstrap/sass/mdb";
+
+@import "mixins";
+@import "base";
+@import "main";
+@import "navbar";

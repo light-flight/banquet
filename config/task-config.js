@@ -1,4 +1,5 @@
 module.exports = {
+  html        : true,
   images      : true,
   fonts       : true,
   static      : true,
@@ -11,6 +12,10 @@ module.exports = {
       // files paths are relative to
       // javascripts.dest in path-config.json
       app: ["./app.js"]
+    },
+    provide: {
+      $: "jquery",
+      jQuery: "jquery"
     }
   },
 
@@ -24,19 +29,5 @@ module.exports = {
 
   production: {
     rev: true
-  },
-
-  html: {
-    alternateTask: function(gulp) {
-
-      var pug = require('gulp-pug');
-      return gulp
-        .src('html/*.pug')
-        .pipe(pug({
-          // Your options in here.
-        }))
-        .pipe(gulp.dest('./dist/'))
-
-    }
   }
 }

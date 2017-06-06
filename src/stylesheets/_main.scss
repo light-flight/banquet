@@ -1,0 +1,97 @@
+.intro {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-image: url('../images/intro.jpg');
+  @include dark-layer;
+  hr {
+    margin-left: 31%;
+    margin-right: 31%;
+    background-color: #fff;
+    height: 1px;
+  }
+  .brand-name {
+      font-size: 4.5rem;
+  }
+  .btn .fa {
+    padding-right: 1em;
+  }
+}
+
+section {
+  & > h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 5% 2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:before, &:after {
+      content: '';
+      display: block;
+      flex: 1;
+      height: 3px;
+      margin: 0 .9em;
+      background-color: #c7c7c7;
+    }
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  h4 {
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    & + p {
+      color: #777;
+      margin-top: 1.5em;
+    }
+  }
+}
+
+.streak {
+  position: relative;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  @include dark-layer;
+  color: #fff;
+  text-align: center;
+  & > * {
+    position: relative;
+  }
+}
+
+// ------------- media -------------
+
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .intro hr.hr-light, .hr-streak hr.hr-light, .intro-video hr.hr-light {
+    margin-left: 28%;
+    margin-right: 28%;
+  }
+}
+
+@media (min-width: 450px) {
+  .streak {
+    height: 350px;
+  }
+}
+
+@media (min-width: 576px) {
+  section > h3 {
+    margin: 3em 30% 2em;
+  }
+}
+
+@media (min-width: 1366px) {
+  .streak {
+    background-attachment: fixed;
+  }
+}

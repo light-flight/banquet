@@ -35,5 +35,7 @@
   "icons": {
     "src": "icons",
     "dest": "images"
-  }
+  },
+
+  "temp": "./temp"
 }
