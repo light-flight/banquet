@@ -5,6 +5,15 @@
   background-position: center center;
   background-image: url('../images/intro.jpg');
   @include dark-layer;
+  .text-animation-block,
+  .button-animation-block {
+    visibility: visible;
+    animation-delay: 0.2s;
+    animation-name: fadeInDown;
+  }
+  .button-animation-block {
+    animation-name: fadeInUp;
+  }
   hr {
     margin-left: 31%;
     margin-right: 31%;
