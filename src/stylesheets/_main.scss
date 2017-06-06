@@ -5,15 +5,6 @@
   background-position: center center;
   background-image: url('../images/intro.jpg');
   @include dark-layer;
-  .text-animation-block,
-  .button-animation-block {
-    visibility: visible;
-    animation-delay: 0.2s;
-    animation-name: fadeInDown;
-  }
-  .button-animation-block {
-    animation-name: fadeInUp;
-  }
   hr {
     margin-left: 31%;
     margin-right: 31%;
@@ -33,7 +24,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3em 5% 2em;
+    margin: 3em 3% 2em;
     text-transform: uppercase;
     font-weight: 500;
     &:before, &:after {
@@ -63,7 +54,7 @@ section {
 
 .streak {
   position: relative;
-  height: 600px;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,6 +68,53 @@ section {
   }
 }
 
+.photos {
+  .photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    .photo-item {
+      position: relative;
+      flex: 1 1 280px;
+      .proportional {
+        display: block;
+        position: relative;
+        padding-bottom: 60%;
+        margin: .5em;
+        background-position: center center;
+        background-size: cover;
+        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.26), 0 4px 15px 0 rgba(0, 0, 0, 0.22);
+        @for $i from 6 through 1 {
+          &[data-item="#{$i}"] {
+            background-image: url("../images/#{$i}.jpg");
+          }
+        }
+      }
+    }
+  }
+}
+
+.infographics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    text-transform: uppercase;
+  }
+  .infographics-numbers {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .item {
+      min-width: 160px;
+      text-align: center;
+      margin: .7em;
+    }
+  }
+}
+
+
 // ------------- media -------------
 
 
@@ -89,13 +127,22 @@ section {
 
 @media (min-width: 450px) {
   .streak {
-    height: 350px;
+    min-height: 350px;
   }
 }
 
 @media (min-width: 576px) {
   section > h3 {
-    margin: 3em 30% 2em;
+    margin: 3em 15% 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  section > h3 {
+    margin: 3em 25% 2em;
+  }
+  .photos .photo-item {
+    flex: 1 1 29% !important;
   }
 }
 
@@ -103,4 +150,7 @@ section {
   .streak {
     background-attachment: fixed;
   }
+  // .photos .photo-item {
+  //   flex: 1 1 33% !important;
+  // }
 }
