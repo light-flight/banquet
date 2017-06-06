@@ -10,6 +10,7 @@
   },
   "repository": "ssh://git@bitbucket.org/lightflight/banquet_hall_website.git",
   "author": "Georgy Yuriev <yurievg@mail.ru>",
+  "homepage": "https://light-flight.github.io/banquet/",
   "scripts": {
     "start": "yarn run blendid",
     "build": "yarn run blendid -- build",
