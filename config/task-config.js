@@ -4,7 +4,10 @@ module.exports = {
   fonts       : true,
   static      : true,
   svgSprite   : true,
-  ghPages     : true,
+  ghPages     : {
+    origin: "github",
+    branch: "master"
+  },
   stylesheets : true,
 
   javascripts: {
