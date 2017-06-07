@@ -25,13 +25,21 @@
   "images/4.jpg": "images/4-5c0a968765.jpg",
   "images/5.jpg": "images/5-d88fa28ce6.jpg",
   "images/6.jpg": "images/6-faf81b15d5.jpg",
-  "images/about.jpg": "images/about-3ada9904e6.jpg",
+  "images/about.jpg": "images/about-aa72565cc6.jpg",
   "images/infographics.jpg": "images/infographics-e875996c96.jpg",
   "images/intro.jpg": "images/intro-459ca8b150.jpg",
   "images/person1.jpg": "images/person1-cecfa7ec8b.jpg",
   "images/person2.jpg": "images/person2-ccffe047a3.jpg",
   "images/person3.jpg": "images/person3-33dac16cee.jpg",
   "images/quote.jpg": "images/quote-ebd8878871.jpg",
+  "images/thumbnails/1.jpg": "images/thumbnails/1-d42a94f037.jpg",
+  "images/thumbnails/2.jpg": "images/thumbnails/2-3a25138090.jpg",
+  "images/thumbnails/3.jpg": "images/thumbnails/3-13abf365e3.jpg",
+  "images/thumbnails/4.jpg": "images/thumbnails/4-e8b701defd.jpg",
+  "images/thumbnails/5.jpg": "images/thumbnails/5-11fd29da1a.jpg",
+  "images/thumbnails/6.jpg": "images/thumbnails/6-cf2be22506.jpg",
   "javascripts/app.js": "javascripts/app-edd5527ca193e2f7a514.js",
-  "stylesheets/app.css": "stylesheets/app-14276f93fc.css"
+  "stylesheets/app.css": "stylesheets/app-c4f46a66aa.css",
+  "stylesheets/base/fancybox.css": "stylesheets/base/fancybox-9402c07737.css",
+  "stylesheets/base/font-awesome.min.css": "stylesheets/base/font-awesome-c47806a6fb.min.css"
 }
