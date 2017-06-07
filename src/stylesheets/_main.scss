@@ -85,7 +85,7 @@ section {
         @include default-shadow;
         @for $i from 6 through 1 {
           &[data-item="#{$i}"] {
-            background-image: url("../images/#{$i}.jpg");
+            background-image: url("../images/thumbnails/#{$i}.jpg");
           }
         }
       }

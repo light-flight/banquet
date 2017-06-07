@@ -1,8 +1,10 @@
-@import "base/typography";
-@import "base/variables";
-
+@import "base/font-awesome.min";
+@import "base/fancybox";
 @import "../../node_modules/mdbootstrap/css/bootstrap.min";
 @import "../../node_modules/mdbootstrap/sass/mdb";
+
+@import "base/typography";
+@import "base/variables";
 
 @import "mixins";
 @import "base";

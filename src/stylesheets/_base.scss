@@ -8,7 +8,10 @@ body {
 
 .wow {
   visibility: visible;
-  animation-delay: 0.13s;
+  animation-delay: .1s;
+  &.wow-big-delay {
+    animation-delay: .8s;
+  }
 }
 
 hr.section-divider {
