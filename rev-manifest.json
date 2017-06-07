@@ -19,6 +19,9 @@
   "fonts/Roboto-Thin.ttf": "fonts/Roboto-Thin-94998475f6.ttf",
   "fonts/Roboto-Thin.woff": "fonts/Roboto-Thin-7500519de3.woff",
   "fonts/Roboto-Thin.woff2": "fonts/Roboto-Thin-954bbdeb86.woff2",
+  "fonts/fontawesome-webfont.ttf": "fonts/fontawesome-webfont-b06871f281.ttf",
+  "fonts/fontawesome-webfont.woff": "fonts/fontawesome-webfont-fee66e712a.woff",
+  "fonts/fontawesome-webfont.woff2": "fonts/fontawesome-webfont-af7ae505a9.woff2",
   "images/1.jpg": "images/1-34daf29b96.jpg",
   "images/2.jpg": "images/2-29702fc7e1.jpg",
   "images/3.jpg": "images/3-75ac8e7b52.jpg",
@@ -39,7 +42,7 @@
   "images/thumbnails/5.jpg": "images/thumbnails/5-11fd29da1a.jpg",
   "images/thumbnails/6.jpg": "images/thumbnails/6-cf2be22506.jpg",
   "javascripts/app.js": "javascripts/app-edd5527ca193e2f7a514.js",
-  "stylesheets/app.css": "stylesheets/app-8cf9888421.css",
+  "stylesheets/app.css": "stylesheets/app-5190b93ae5.css",
   "stylesheets/base/fancybox.css": "stylesheets/base/fancybox-9402c07737.css",
-  "stylesheets/base/font-awesome.min.css": "stylesheets/base/font-awesome-c47806a6fb.min.css"
+  "stylesheets/base/font-awesome.min.css": "stylesheets/base/font-awesome-ad64fc85b8.min.css"
 }
