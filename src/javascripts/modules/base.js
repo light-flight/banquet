@@ -3,14 +3,14 @@ export default class Base {
     this.el = el;
 
     var wow = new WOW({
-      offset: 70
+      offset: 20
     });
     wow.init();
 
 
 
     // Select all links with hashes
-    $('.nav-link[href*="#"]')
+    $('[href*="#"]')
       // Remove links that don't actually link to anything
       .not('[href="#"]')
       .not('[href="#0"]')

@@ -1,18 +1,35 @@
 .intro {
+  width: 100%;
   position: relative;
   height: 100vh;
   background-size: cover;
-  background-position: center center;
+  // background-position: bottom center;
+  background-position: center 90%;
   background-image: url('../images/intro.jpg');
-  @include dark-layer;
-  hr {
-    margin-left: 31%;
-    margin-right: 31%;
-    background-color: #fff;
-    height: 1px;
+  @include dark-layer(.2);
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro-text {
+    position: relative;
+    padding: 1em;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(#000, .8), 0 0 12px rgba(#000, .6);
+    & > * {
+      visibility: hidden;
+    }
   }
   .brand-name {
       font-size: 4.5rem;
+  }
+  .subtext-header {
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin: 8px 0;
   }
   .btn .fa {
     padding-right: 1em;
@@ -43,10 +60,10 @@ section {
   }
   h4 {
     font-weight: 400;
-    color: #333;
+    color: #222;
     text-align: center;
-    & + p {
-      color: #777;
+    & ~ p {
+      color: #333;
       margin-top: 1.5em;
     }
   }
@@ -60,7 +77,7 @@ section {
   align-items: center;
   background-size: cover;
   background-position: center center;
-  @include dark-layer;
+  @include dark-layer(.15);
   color: #fff;
   text-align: center;
   & > * {
@@ -100,6 +117,7 @@ section {
   align-items: center;
   h3 {
     text-transform: uppercase;
+    text-shadow: 1px 2px 2px rgba(#000, .4);
   }
   .infographics-numbers {
     width: 100%;
@@ -168,7 +186,7 @@ section {
   .social-btns {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .map {
@@ -178,15 +196,20 @@ section {
   }
 }
 
+footer.page-footer .footer-copyright {
+  height: auto;
+  p {
+    margin: .5em 0;
+    line-height: 1.7;
+  }
+}
+
 
 // ------------- media -------------
 
 
 @media (max-width: 1024px) and (min-width: 769px) {
-  .intro hr.hr-light, .hr-streak hr.hr-light, .intro-video hr.hr-light {
-    margin-left: 28%;
-    margin-right: 28%;
-  }
+
 }
 
 @media (min-width: 450px) {
@@ -201,6 +224,25 @@ section {
   }
   .contacts .contact-cards .contact-item {
     font-size: 1.4em;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro {
+    // @include dark-layer(0);
+    &:before {
+      background: linear-gradient(to left,rgba(#000, .55), rgba(#000, 0) 70%);
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    .intro-text {
+      text-align: right;
+      padding-right: 0;
+    }
   }
 }
 
