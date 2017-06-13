@@ -100,13 +100,50 @@ section {
         background-position: center center;
         background-size: cover;
         @include default-shadow;
-        @for $i from 6 through 1 {
+        @for $i from 8 through 1 {
           &[data-item="#{$i}"] {
             background-image: url("../images/thumbnails/#{$i}.jpg");
           }
         }
       }
     }
+  }
+}
+
+.menu {
+  table {
+    th {
+      font-size: 1.25em;
+    }
+    td {
+      .dish {
+        font-style: 1.15em;
+      }
+      .dish-contains {
+        font-size: .92em;
+        font-style: italic;
+      }
+    }
+  }
+  .table-tabs {
+    input {
+      display: none;
+      &:checked {
+        & + label {
+          background-color: #5A95F5 !important;
+          color: #fff !important;
+        }
+        &#t2500 ~ #table-2500 {
+          display: block;
+        }
+        &#t3500 ~ #table-3500 {
+          display: block;
+        }
+      }
+    }
+  }
+  .table-item {
+    display: none;
   }
 }
 

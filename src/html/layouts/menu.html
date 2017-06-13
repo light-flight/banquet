@@ -18,85 +18,16 @@
       </span>
     </p>
 
-    <div class="col-lg-8 offset-lg-2">
-      <table class="wow fadeIn table table-sm table-hover mt-3 mb-4">
-      <thead class="thead-default">
-        <tr>
-          <th>Наименование</th>
-          <th>Вес</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>Фрукты</th>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td>Фрукты по желанию</td>
-          <td>1500г</td>
-        </tr>
-        <tr>
-          <th>Горячие закуски</th>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td>Жульен грибной</td>
-          <td>80г</td>
-        </tr>
-        <tr>
-          <th>Горячие блюда</th>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td>Стейк из говядины</td>
-          <td>300г</td>
-        </tr>
-        <tr>
-          <td>Стейк из говяжей вырезки</td>
-          <td>350г</td>
-        </tr>
-        <tr>
-          <td>Семга с соусом из красной икры</td>
-          <td>200г</td>
-        </tr>
-        <tr>
-          <td>Шашлык из баранины</td>
-          <td>300г</td>
-        </tr>
-        <tr>
-          <td>Каре барашка запеченое с соевым соусом и розмарином</td>
-          <td>560г</td>
-        </tr>
-        <tr>
-          <th>Гарниры</th>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td>Баклажаны, томаты, цуккини</td>
-          <td>300г</td>
-        </tr>
-        <tr>
-          <td>Молодой картофель</td>
-          <td>350г</td>
-        </tr>
-        <tr>
-          <th>Напитки</th>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td>Сок</td>
-          <td>200мл</td>
-        </tr>
-        <tr>
-          <td>Морс клюквенный</td>
-          <td>300мл</td>
-        </tr>
-        <tr>
-          <td>Кофе и чай</td>
-          <td>100мл</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-tabs col-lg-8 offset-lg-2">
+      <input id="t3500" type="radio" name="tabs" checked>
+      <label for="t3500" title="В стол на 3500р" class="btn btn-outline-primary">В стол на 3500р</label>
+
+      <input id="t2500" type="radio" name="tabs">
+      <label for="t2500" title="В стол на 2500р" class="btn btn-outline-primary">В стол на 2500р</label>
+
+      {% include "layouts/table3500.html" %}
+      {% include "layouts/table2500.html" %}
+
     </div>
 
   </section>
