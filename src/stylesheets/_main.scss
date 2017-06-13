@@ -58,13 +58,16 @@ section {
     max-width: 100%;
     height: auto;
   }
-  h4 {
-    font-weight: 400;
-    color: #222;
-    text-align: center;
-    & ~ p {
-      color: #333;
-      margin-top: 1.5em;
+  article {
+    h4 {
+      margin-bottom: 1em;
+      font-weight: 400;
+      color: #222;
+      text-align: center;
+      p {
+        color: #333;
+        margin-top: 1.5em;
+      }
     }
   }
 }
@@ -95,16 +98,16 @@ section {
       .proportional {
         display: block;
         position: relative;
-        padding-bottom: 60%;
+        // padding-bottom: 60%;
         margin: .5em;
-        background-position: center center;
-        background-size: cover;
+        // background-position: center center;
+        // background-size: cover;
         @include default-shadow;
-        @for $i from 8 through 1 {
-          &[data-item="#{$i}"] {
-            background-image: url("../images/thumbnails/#{$i}.jpg");
-          }
-        }
+        // @for $i from 8 through 1 {
+        //   &[data-item="#{$i}"] {
+        //     background-image: url("../images/thumbnails/#{$i}.jpg");
+        //   }
+        // }
       }
     }
   }

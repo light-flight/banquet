@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="theme-color" content="#3E4551">
+    <meta name="description" content="{{ description }}">
 
     <title>{% block title %}{{ title }}{% endblock %}</title>
 
@@ -19,7 +20,7 @@
 
   </head>
 
-  <body data-module="base">
+  <body data-module="base" itemscope itemtype="http://schema.org/Place">
     {% block navbar %}{% endblock %}
     {% include "layouts/navbar.html" %}
     {% block content %}{% endblock %}
