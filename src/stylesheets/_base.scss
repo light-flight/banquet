@@ -84,3 +84,15 @@ hr.section-divider {
   //   linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
 
 }
+
+.container-wide {
+  @media (min-width: 992px) {
+    width: 98%;
+  }
+  @media (min-width: 1200px) {
+    width: 95%;
+  }
+  @media (min-width: 1600px) {
+    width: 75%;
+  }
+}
